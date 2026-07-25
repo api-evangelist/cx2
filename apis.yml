@@ -1,7 +1,28 @@
 aid: cx2
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cx2.png
 name: Cx2
-description: Cx2 is a company surfaced as a portfolio company of 8vc and added to the API Evangelist network
-  as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: CX2 is a defense technology company building AI-enabled electromagnetic
+  spectrum (electronic warfare) systems for the tactical edge. Founded in 2024 and
+  headquartered in El Segundo, California, CX2 develops attritable, machine-learning-powered
+  hardware and software that detect, disrupt, and geolocate RF threats across land,
+  air, sea, and space. Its flagship products are Wraith, a roughly 32-pound autonomous
+  airborne EW platform that geolocates and identifies hostile emitters such as jammers
+  and radars in GPS-denied environments, and Vadris, an RF-seeking payload for FPV
+  drones that hunts ground control stations and other emitters of interest. CX2 is
+  backed by 8VC, Point72 Ventures, Andreessen Horowitz, and others, and sells directly
+  to military and government customers. It does not currently publish a public API
+  or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/cx2/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Defense
+- Electronic Warfare
+- Aerospace
+- National Security
+- Drones
+- RF Sensing
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cx2-domain-security.yml
 - type: Website
   url: https://cx2.com
+- type: Blog
+  url: https://www.cx2.com/newsroom
+- type: PrivacyPolicy
+  url: https://www.cx2.com/privacy
+- type: Support
+  url: https://www.cx2.com/contact-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
